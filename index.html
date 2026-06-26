@@ -1,39 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aggravated Assault</title>
-
-    <style>
-
-        html,body{
-            margin:0;
-            padding:0;
-            width:100%;
-            height:100%;
-            background:#000;
-        }
-
-        body{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-        }
-
-        img{
-            width:100%;
-            height:100%;
-            object-fit:contain;
-        }
-
-    </style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aggravated Assault | Official Website</title>
+  <meta name="description" content="Official website of Aggravated Assault, Northern California thrash metal from Fairfield, California. Listen to The Order of Chaos, view the EPK, upcoming shows, and merch updates.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">AGGRAVATED ASSAULT</a>
+      <div class="nav-links">
+        <a href="https://open.spotify.com/album/29rfsQ87Nvz3T0gNSQuiYK?si=NMu_-0fqS2m7xWDnXvy7WQ" target="_blank" rel="noopener">Spotify</a>
+        <a href="shows.html">Shows</a>
+        <a href="epk.html">EPK</a>
+        <a href="#join">Join</a>
+        <a href="#merch">Merch</a>
+      </div>
+    </div>
+  </nav>
 
-<img src="under-construction.png" alt="Aggravated Assault">
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <img class="hero-img" src="assets/landing-page.png" alt="Aggravated Assault official website landing page">
+        </div>
+        <div class="cta-row">
+          <a class="btn spotify" href="https://open.spotify.com/album/29rfsQ87Nvz3T0gNSQuiYK?si=NMu_-0fqS2m7xWDnXvy7WQ" target="_blank" rel="noopener">Listen on Spotify</a>
+        </div>
+        <div class="button-grid">
+          <a class="btn" href="https://www.instagram.com/aggravatedassaultband" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn" href="https://www.facebook.com/share/1DDBsNW4qT/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+          <a class="btn" href="https://www.youtube.com/@AggravatedAssault_music" target="_blank" rel="noopener">YouTube</a>
+          <a class="btn" href="epk.html">EPK</a>
+          <a class="btn red" href="shows.html">Upcoming Shows</a>
+          <a class="btn disabled" href="#merch">Merch Coming Soon</a>
+        </div>
+      </div>
+    </section>
 
+    <section id="join" class="section">
+      <div class="container">
+        <div class="panel">
+          <div class="kicker">Join the Assault</div>
+          <h2>Get music, show, merch, and news updates.</h2>
+          <p>This signup form is a placeholder for now. We can connect it to Mailchimp, Brevo, Google Forms, or another mailing-list service when you're ready.</p>
+          <form class="email-box" action="#" method="post">
+            <input type="email" placeholder="Enter your email address" aria-label="Email address">
+            <button type="button">Join Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="merch" class="section">
+      <div class="container">
+        <div class="panel">
+          <div class="kicker">Merch</div>
+          <h2>Coming Soon</h2>
+          <p>Shirts, stickers, patches, and more will be added here as the merch plan develops.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Official Website · Fairfield, California · © 2026 Aggravated Assault
+  </footer>
 </body>
 </html>
