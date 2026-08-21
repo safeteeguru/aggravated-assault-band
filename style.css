@@ -74,3 +74,36 @@ a{color:inherit;text-decoration:none}.container{width:min(1040px,92vw);margin:0 
 
 .center-panel{text-align:center}
 .center-panel p{font-size:20px;margin-bottom:24px}
+
+.booking-feature{
+  display:block;
+  text-align:center;
+  padding:48px 60px;
+}
+
+.booking-copy{
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.booking-copy h1{
+  font-size:52px;
+  margin:12px 0 22px;
+}
+
+.booking-copy .venue{
+  max-width:900px;
+  margin:0 auto 22px;
+  font-size:22px;
+  line-height:1.5;
+}
+
+.booking-copy .date{
+  margin:0 0 28px;
+}
+
+.booking-copy .btn{
+  margin:6px 8px;
+}
