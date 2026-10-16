@@ -5,12 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aggravated Assault | Official Website</title>
   <meta name="description" content="Official website of Aggravated Assault, Northern California thrash metal from Fairfield, California. Listen to The Order of Chaos, view the EPK, upcoming shows, and merch updates.">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Aggravated Assault">
+  <meta property="og:title" content="Aggravated Assault | Official Website">
+  <meta property="og:description" content="Official website of Aggravated Assault, Northern California thrash metal from Fairfield, California. Listen to The Order of Chaos, view the EPK, upcoming shows, and merch updates.">
+  <meta property="og:image" content="https://aggravatedassault.band/assets/logo.jpeg">
+  <meta property="og:image:alt" content="Aggravated Assault logo">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="nav">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner nav-right">
       <div class="nav-links">
+        <a href="index.html" aria-current="page">Home</a>
         <a href="shows.html">Shows</a>
         <a href="gallery.html">Gallery</a>
         <a href="epk.html">EPK</a>
@@ -20,7 +30,7 @@
     </div>
   </nav>
 
-  <main>
+  <main id="main-content">
     <section class="hero simple-hero">
       <div class="container hero-content">
         <img class="main-logo" src="assets/logo.jpeg" alt="Aggravated Assault logo">
@@ -61,49 +71,17 @@
             <div class="kicker">Join the Assault</div>
             <p>Get updates on new music, shows, merch and exclusive news.</p>
           </div>
-          <form class="mail-box" id="signup-form">
-  <input id="signup-email" type="email" placeholder="Enter your email address" aria-label="Email address" required>
-  <button type="submit">Join Now</button>
-</form>
-<p id="signup-message" class="signup-message"></p>
-
-<script>
-  const signupForm = document.getElementById("signup-form");
-  const signupEmail = document.getElementById("signup-email");
-  const signupMessage = document.getElementById("signup-message");
-
-  signupForm.addEventListener("submit", async function (event) {
-    event.preventDefault();
-
-    const email = signupEmail.value.trim();
-
-    if (!email) {
-      signupMessage.textContent = "Enter your email first.";
-      return;
-    }
-
-    signupMessage.textContent = "Joining...";
-
-    try {
-      const response = await fetch("https://aggravated-assault-signup.safeteeguru.workers.dev", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ email: email })
-      });
-
-      if (!response.ok) {
-        throw new Error("Signup failed");
-      }
-
-      signupMessage.textContent = "You’re on the list. Welcome to the assault.";
-      signupForm.reset();
-    } catch (error) {
-      signupMessage.textContent = "Something went wrong. Try again or email info@aggravatedassault.band.";
-    }
-  });
-</script>
+          <div class="signup-block">
+            <form class="email-box" id="signup-form" aria-describedby="signup-note">
+              <label class="sr-only" for="signup-email">Email address</label>
+              <input id="signup-email" name="email" type="email" autocomplete="email" placeholder="Enter your email address" required>
+              <button type="submit">Join Now</button>
+            </form>
+            <p id="signup-note" class="signup-note">Sign up for band email updates about music, shows, and merch.</p>
+            <p id="signup-message" class="signup-message" role="status" aria-live="polite" aria-atomic="true"></p>
+            <noscript><p>Email <a href="mailto:aggravatedassaultband1@gmail.com">aggravatedassaultband1@gmail.com</a> to ask about joining the mailing list.</p></noscript>
+          </div>
+          <script src="signup.js" defer></script>
         </div>
       </div>
     </section>
