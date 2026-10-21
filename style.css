@@ -180,3 +180,10 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 .band-lineup strong{display:block;color:#fff;text-transform:uppercase;font-size:20px;letter-spacing:.06em}
 .band-lineup span{display:block;color:#ddd;font-size:14px;line-height:1.5;margin-top:6px}
 @media(max-width:560px){.band-lineup{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}.band-lineup strong{font-size:18px}.band-lineup span{font-size:13px}}
+
+/* Five homepage links, including Band News. */
+.quick-links.five{grid-template-columns:repeat(5,minmax(0,1fr));width:100%;gap:12px}
+.quick-links.five .action-card{font-size:14px;gap:8px;letter-spacing:.06em}
+.quick-links.five .action-card small{font-size:9px;letter-spacing:.04em}
+@media(max-width:1000px){.quick-links.five{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.quick-links.five{grid-template-columns:repeat(2,minmax(0,1fr))}.quick-links.five .action-card:last-child{grid-column:1/-1}}
