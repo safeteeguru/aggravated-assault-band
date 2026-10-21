@@ -174,3 +174,13 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   html{scroll-behavior:auto}
   *, *::before, *::after{transition:none!important}
 }
+
+/* EPK band portrait: preserve the complete photo and match its left-to-right lineup. */
+.band-portrait{margin-left:0;margin-right:0}
+.band-portrait .band-members{height:auto}
+.band-portrait figcaption{padding:20px 4px 4px;text-align:center}
+.lineup-label{display:block;color:#aaa;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+.band-lineup{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;list-style:none;padding:0;margin:0}
+.band-lineup strong{display:block;color:#fff;text-transform:uppercase;font-size:20px;letter-spacing:.06em}
+.band-lineup span{display:block;color:#ddd;font-size:14px;line-height:1.5;margin-top:6px}
+@media(max-width:560px){.band-lineup{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}.band-lineup strong{font-size:18px}.band-lineup span{font-size:13px}}
