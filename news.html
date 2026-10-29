@@ -39,6 +39,12 @@
       </div>
       <!-- News entries: date followed by story, newest first. -->
       <section class="news-stories" aria-label="Band news stories">
+        <article id="post-op-release" aria-label="October 30, 2026: Post-Op music video release" style="padding:24px 0 40px" hidden>
+          <time datetime="2026-10-30" style="display:block;color:#e01923;font-weight:bold;margin-bottom:18px">October 30, 2026</time>
+          <h2>AGGRAVATED ASSAULT RELEASES &ldquo;POST-OP&rdquo; MUSIC VIDEO</h2>
+          <p style="font-size:18px;line-height:1.75;color:#ddd;margin:0 0 24px">Aggravated Assault announces its release of the official music video for <strong>&ldquo;Post-Op,&rdquo;</strong> available now on YouTube.</p>
+          <p style="font-size:18px;line-height:1.75;color:#ddd;margin:0 0 24px"><strong>Watch &ldquo;Post-Op&rdquo; now:</strong> <a href="https://youtu.be/EmFA1bjiQMA" target="_blank" rel="noopener noreferrer" style="text-decoration:underline">WATCH THE VIDEO</a></p>
+        </article>
         <article aria-label="October 21, 2026: Post-Op video" style="padding:24px 0 40px">
           <time datetime="2026-10-21" style="display:block;color:#e01923;font-weight:bold;margin-bottom:18px">October 21, 2026</time>
           <p style="font-size:18px;line-height:1.75;color:#ddd;margin:0 0 24px">Aggravated Assault is wrapping up the edits for the music video for its latest release, &ldquo;Post-Op.&rdquo; Check our <a href="https://www.youtube.com/@AggravatedAssault_music" target="_blank" rel="noopener" style="text-decoration:underline">YouTube page</a> on October 30 to watch it, or <a href="index.html#join" style="text-decoration:underline">join our mailing list</a> to be notified when it&rsquo;s posted and get other band news!</p>
@@ -51,5 +57,20 @@
       </section>
     </div>
   </main>
+  <script>
+    // Release at midnight Pacific time on October 30, 2026, regardless of visitor timezone.
+    (function () {
+      const release = document.getElementById('post-op-release');
+      function updateReleaseVisibility() {
+        const pacificDate = new Intl.DateTimeFormat('en-CA', {
+          timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit'
+        }).format(new Date());
+        release.hidden = pacificDate < '2026-10-30';
+      }
+      updateReleaseVisibility();
+      // Also reveal it for visitors who leave the page open across midnight.
+      setInterval(updateReleaseVisibility, 30000);
+    }());
+  </script>
 </body>
 </html>
