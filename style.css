@@ -199,3 +199,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 
 /* Full-width logo hierarchy: brand no longer constrained by hero columns. */
 .hero-brand{display:flex;justify-content:center;align-items:center;margin:0 auto 28px;width:100%}.hero-brand .hero-logo{display:block;width:min(900px,100%);max-height:340px;height:auto;object-fit:contain;object-position:center;margin:0}.hero-grid{align-items:center}.hero-redesign{padding-top:26px}.hero-intro h1{margin-top:8px}@media(max-width:680px){.hero-brand{margin-bottom:16px}.hero-brand .hero-logo{width:100%;max-height:220px}.hero-redesign{padding-top:16px}}
+
+/* Review: larger desktop brand lockup and clear show links. */
+@media(min-width:901px){.hero-brand .hero-logo{width:min(1120px,100%);max-height:460px}.hero-brand{margin-bottom:22px}.hero-redesign{padding-top:20px}}
+.split-section p a{color:#fff;text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:4px}.split-section p a:hover{color:#ff6266}
