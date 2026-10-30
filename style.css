@@ -203,3 +203,6 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 /* Review: larger desktop brand lockup and clear show links. */
 @media(min-width:901px){.hero-brand .hero-logo{width:min(1120px,100%);max-height:460px}.hero-brand{margin-bottom:22px}.hero-redesign{padding-top:20px}}
 .split-section p a{color:#fff;text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:4px}.split-section p a:hover{color:#ff6266}
+
+/* EPK featured Post-Op video inside current-release card */
+.epk-video{margin:18px 0 22px}.epk-video .video-shell{width:100%;max-width:100%;aspect-ratio:16/9}.epk-video .play-circle{width:58px;height:58px;font-size:24px}.epk-video-caption{font-size:14px!important;line-height:1.5!important;color:#ddd!important;margin:10px 0 0!important}.epk-video .video-poster img{display:block}
