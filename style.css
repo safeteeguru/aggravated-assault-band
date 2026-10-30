@@ -206,3 +206,6 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 
 /* EPK featured Post-Op video inside current-release card */
 .epk-video{margin:18px 0 22px}.epk-video .video-shell{width:100%;max-width:100%;aspect-ratio:16/9}.epk-video .play-circle{width:58px;height:58px;font-size:24px}.epk-video-caption{font-size:14px!important;line-height:1.5!important;color:#ddd!important;margin:10px 0 0!important}.epk-video .video-poster img{display:block}
+
+/* Hard @ Lurk livestream announcement */
+.live-event{border-left:4px solid var(--red);padding:36px}.live-event h2{font-size:clamp(25px,3.2vw,42px);margin:12px 0}.live-event p{max-width:760px}.event-links{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.event-links .btn{font-size:14px;min-width:0}.event-note{font-size:13px!important;color:#aaa!important}@media(max-width:600px){.live-event{padding:22px}.event-links{flex-direction:column}.event-links .btn{width:100%}}
