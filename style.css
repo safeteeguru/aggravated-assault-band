@@ -209,3 +209,6 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 
 /* Hard @ Lurk livestream announcement */
 .live-event{border-left:4px solid var(--red);padding:36px}.live-event h2{font-size:clamp(25px,3.2vw,42px);margin:12px 0}.live-event p{max-width:760px}.event-links{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.event-links .btn{font-size:14px;min-width:0}.event-note{font-size:13px!important;color:#aaa!important}@media(max-width:600px){.live-event{padding:22px}.event-links{flex-direction:column}.event-links .btn{width:100%}}
+
+/* Event flyer and details: side-by-side desktop, stacked on phones. */
+.event-layout{display:grid;grid-template-columns:minmax(220px,0.85fr) minmax(0,1.15fr);align-items:start;gap:28px}.event-flyer{display:block;max-width:420px;overflow:hidden;border:1px solid #444;background:#080808}.event-flyer img{display:block;width:100%;height:auto;object-fit:contain}.event-flyer:hover{border-color:var(--red)}.event-info{min-width:0}.event-info .event-links{align-items:stretch}.event-info .event-links .btn{white-space:normal;text-align:center}@media(max-width:760px){.event-layout{grid-template-columns:1fr;gap:24px}.event-flyer{width:100%;max-width:460px;margin-inline:auto}}
